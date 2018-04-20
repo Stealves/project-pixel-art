@@ -24,3 +24,16 @@ function makeGrid(event) {
     tableCanvas.append(row + "</tr>");
   }
 }
+
+//Color cell function
+function colorCanvas() {
+  //When user click on a cell the chosen color is applied to the background
+  $("td").click(function() {
+    colorChoice = $("#colorPicker").val();
+    $(this).css("background-color", colorChoice);
+  });
+  //On double click user can remove the color of the cell
+  $("td").dblclick(function() {
+    $(this).css("background-color", "");
+  });
+}
