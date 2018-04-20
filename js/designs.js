@@ -37,3 +37,6 @@ function colorCanvas() {
     $(this).css("background-color", "");
   });
 }
+
+//Color canvas function call when user enter mouse on table
+tableCanvas.mouseenter(colorCanvas);
